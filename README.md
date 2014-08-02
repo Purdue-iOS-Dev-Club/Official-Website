@@ -1,5 +1,10 @@
 #[Purdue iOS Dev Club Website](http://PurdueiOSDevClub.com/)
 
+##Domain Info
+- URL: http://PurdueiOSDevClub.com/
+- Holder: George Lo
+- Valid until 08/02/2015
+
 ##Server-side
 - Node.js (Expressjs framework)
 
