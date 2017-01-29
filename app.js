@@ -19,23 +19,6 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-/// use POST endpoint to get values from html form
-app.post('/api/contactForm', function(req, res) {
-    var nodemailer = require('nodemailer');
-    var transporter = nodemailer.createTransport();
-    transporter.sendMail({
-        from: req.body.email,
-        to: 'log@purdue.edu',
-        subject: req.body.subject,
-        text: req.body.message
-    }, function(error, info) {
-        if(error) {
-            res.send("<h4>Error! Please contact our president: log@purdue.edu</h4>");
-        } else {
-            res.send("<h4>Thank you! Your message has been sent.</h3>");
-        }
-    });
-});
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {

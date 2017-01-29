@@ -1,0 +1,19 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Eventually by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Signup Form */
+
+	#signup-form {
+		> * {
+			display: inline-block;
+			vertical-align: top;
+		}
+	}

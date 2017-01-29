@@ -1,0 +1,6 @@
+/* Signup Form */
+
+	#signup-form > * {
+		display: inline-block;
+		vertical-align: top;
+	}
